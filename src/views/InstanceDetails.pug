@@ -8,6 +8,7 @@ block content
 	- }
 
 	- function prettyDate(date){
+	- if (typeof date === "string") date = new Date(date);
 	- var d = date.getDate();
 	- var m = date.getMonth() + 1; //Months are zero based
 	- var y = date.getFullYear();
